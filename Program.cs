@@ -17,7 +17,7 @@ namespace XUnitIntroPractice
         //Write a method called IsYesOrNo that will accept a string and return true if the string is “YES”, “Y”, “NO”, or “N”, in any casing, trimmed. Otherwise it will return false.
         public static bool IsYesOrNo(string input)
         {
-            if (input.ToLower().Trim() == "yes" || input.ToLower().Trim() == "y" || input.ToLower().Trim() == "no" || input.ToLower().Trim() == "n")
+            if (input.ToUpper().Trim() == "YES" || input.ToUpper().Trim() == "Y" || input.ToUpper().Trim() == "NO" || input.ToUpper().Trim() == "N")
             {
                 return true;
             }
