@@ -1,9 +1,6 @@
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 using System;
 using Xunit; //Add an assembly reference from the XUnit project to the console application.
-using NuGet.Frameworks;
 using XUnitIntroPractice;
-using System.Collections.Generic;
 
 namespace XUnitIntroPractice_Tests
 {
@@ -12,7 +9,7 @@ namespace XUnitIntroPractice_Tests
         [Fact]
         public void HelloWorld_Test()
         {
-            XUnitIntroPractice.Program.HelloWorld();
+            Program.HelloWorld();
         }
 
         /*
@@ -34,7 +31,7 @@ namespace XUnitIntroPractice_Tests
             ]
         public void Program_IsYesOrNo_Trim(string test, bool expectedResult)
         {
-            Assert.Equal(XUnitIntroPractice.Program.IsYesOrNo(test), expectedResult);
+            Assert.Equal(Program.IsYesOrNo(test), expectedResult);
         }
 
         /*
@@ -48,7 +45,7 @@ namespace XUnitIntroPractice_Tests
             ]
         public void Program_IsYesOrNo_ToUpper(string test, bool expectedResult)
         {
-            Assert.Equal(XUnitIntroPractice.Program.IsYesOrNo(test), expectedResult);
+            Assert.Equal(Program.IsYesOrNo(test), expectedResult);
         }
 
         /*
@@ -79,7 +76,7 @@ namespace XUnitIntroPractice_Tests
             ]
         public void Program_IsYesOrNo_InvalidValues(string test, bool expectedResult)
         {
-            Assert.Equal(XUnitIntroPractice.Program.IsYesOrNo(test), expectedResult);
+            Assert.Equal(Program.IsYesOrNo(test), expectedResult);
         }
 
         /*
@@ -93,25 +90,25 @@ namespace XUnitIntroPractice_Tests
                     ]
         public void Program_IsYesOrNo_ThrowFormatException(string test)
         {
-            Assert.Throws<FormatException>(() => XUnitIntroPractice.Program.IsYesOrNoException(test)); //Exception in this example can be replaced with a specific type of exception, and it will test for that and only that exception
+            Assert.Throws<FormatException>(() => Program.IsYesOrNoException(test)); //Exception in this example can be replaced with a specific type of exception, and it will test for that and only that exception
         }
 
         [Fact]
         public void ThrowFormatOutOfRange()
         {
-            Assert.Throws<IndexOutOfRangeException>(() => XUnitIntroPractice.Program.OutOfRange()); //Exception in this example can be replaced with a specific type of exception, and it will test for that and only that exception
+            Assert.Throws<IndexOutOfRangeException>(() => Program.OutOfRange()); //Exception in this example can be replaced with a specific type of exception, and it will test for that and only that exception
         }
 
         [Fact]
         public void NullTest()
         {
-            Assert.Throws<NullReferenceException>(() => XUnitIntroPractice.Program.NullTest()); //Exception in this example can be replaced with a specific type of exception, and it will test for that and only that exception
+            Assert.Throws<NullReferenceException>(() => Program.NullTest()); //Exception in this example can be replaced with a specific type of exception, and it will test for that and only that exception
         }
 
         [Fact]
         public void DivideByZeroTest()
         {
-            Assert.Throws<DivideByZeroException>(() => XUnitIntroPractice.Program.ZeroTest()); //Exception in this example can be replaced with a specific type of exception, and it will test for that and only that exception
+            Assert.Throws<DivideByZeroException>(() => Program.ZeroTest()); //Exception in this example can be replaced with a specific type of exception, and it will test for that and only that exception
         }
 
     }
