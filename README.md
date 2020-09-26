@@ -10,6 +10,7 @@ Packages used within this assignment includes:
 - xunit
 
 ```bash
+$ git clone https://github.com/jia-von/xunit-practice-introduction.git
 $ cd xunit-practice-oop-jia-von
 $ cd XUnitTestProject1
 $ start devenv XUnitTestProject1.sln
