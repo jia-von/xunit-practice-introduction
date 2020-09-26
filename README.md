@@ -18,7 +18,7 @@ Packages used within this assignment includes:
    - XUnit tests were written that will test the conversion to uppercase.
    - XUnit tests were written for all accepted values.
    - XUnit tests were written for invalid values. Include at least one single character invalid value, one multiple character one, and an empty string.
-- Wrote assertions using ***Throws<FormatException>, Throws<IndexOutOfRangeException>, Throws<NullReferenceException> and Throws<DivideByZero Exception>***, to demonstrate my understanding thereof.
+- Wrote assertions using ***Throws\<FormatException\>, Throws\<IndexOutOfRangeException\>, Throws\<NullReferenceException\> and Throws\<DivideByZero Exception\>***, to demonstrate my understanding thereof.
 
 ![Example Screenshot of XUnit testing](/Screenshot/XUnitTesting_ScreenShot.PNG)
 
