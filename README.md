@@ -1,6 +1,6 @@
 # C# XUnit Practice within Microsoft.NETCore.App
 
-- The goal of this assignment is designed to help me familiarized with the fundementals of XUnit testing.
+The goal of this assignment is designed to help me familiarized with the fundementals of XUnit testing.
  
 
 ## Installation
@@ -20,6 +20,6 @@ Packages used within this assignment includes:
    - XUnit tests were written for invalid values. Include at least one single character invalid value, one multiple character one, and an empty string.
 - Wrote assertions using ***Throws<FormatException>, Throws<IndexOutOfRangeException>, Throws<NullReferenceException> and Throws<DivideByZero Exception>***, to demonstrate my understanding thereof.
 
-[Example Screenshot of XUnit testing](./XUnitTesting_ScreenShot.PNG)
+[Example Screenshot of XUnit testing](/Screenshot/XUnitTesting_ScreenShot.PNG)
 
 
