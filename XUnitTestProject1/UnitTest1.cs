@@ -62,7 +62,7 @@ namespace XUnitIntroPractice_Tests
             ]
         public void Program_IsYesOrNo_Values(string test, bool expectedResult)
         {
-            Assert.Equal(XUnitIntroPractice.Program.IsYesOrNo(test), expectedResult);
+            Assert.Equal(Program.IsYesOrNo(test), expectedResult);
         }
 
         /*
